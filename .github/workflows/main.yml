@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          repository: "LalatinaHub/LatinaSub"
+          repository: "SahanY099/vpn-aggregator"
       - name: Get secrets
         run: |
           echo ${{ secrets.BOT_TOKEN }} > ./bot_token
