@@ -56,6 +56,7 @@ class Main {
       this.maxConcurrentTest = Math.round(configUrls.length / 100 / 2);
       if (this.maxConcurrentTest > 100) this.maxConcurrentTest = 100;
       if (this.maxConcurrentTest < 50) this.maxConcurrentTest = 50;
+      this.maxConcurrentTest = 100;
 
       logger.log(LogLevel.info, `Start test number: ${i}`);
       logger.log(LogLevel.info, `Max concurrent test: ${this.maxConcurrentTest}`);
