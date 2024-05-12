@@ -105,7 +105,10 @@ class Main {
             }
 
             account.config.skipCertVerify = true;
-            account.config.network = account.config.network?.toLowerCase();
+            try {
+              account.config.network = account.config.network?.toLowerCase();
+            } catch (e) {
+            }
             switch (account.config.network) {
               case "ws":
                 if (!account.config.path) account.config.path = "/";
