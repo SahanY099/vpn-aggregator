@@ -183,11 +183,11 @@ class Main {
       });
     }
 
-    logger.log(LogLevel.info, "Sending sample to telegram channel ...");
+    /* logger.log(LogLevel.info, "Sending sample to telegram channel ...");
     await bot.sendToChannel(
       this.fishermanPool[Math.floor(Math.random() * this.fishermanPool.length)],
       this.connectCount
-    );
+    ); */
     writeFileSync("./result/nodes", this.configUrls.join("\n"));
     writeFileSync("./result/blacklist_node", this.blacklistNode.join("\n"));
 
